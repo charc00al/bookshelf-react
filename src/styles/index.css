@@ -1,0 +1,32 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --green: rgb(68, 81, 51);
+  --dark-olive: rgb(56, 63, 47);
+  --grey: rgb(129, 133, 122);
+  --dark-grey: rgb(46, 44, 44);
+  --whiteish: rgb(213, 213, 213)
+}
+
+body {
+  background-color: var(--green);
+  padding: 4rem;
+}
+
+
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+

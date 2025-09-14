@@ -1,0 +1,25 @@
+
+.book {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.book img {
+  height: 220px;
+  width: auto;
+  max-width: fit-content;
+}
+
+.bookCover {
+  max-width: 250px;
+  height: auto;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.bookCover:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 1px var(--green);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}

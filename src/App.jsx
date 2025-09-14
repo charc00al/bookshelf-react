@@ -1,22 +1,26 @@
 // components
 import Header from "./components/Header";
-import Book from "./components/Book";
-
-// styles
-import styles from './styles/Bookshelf.module.css';
+import Bookshelf from "./components/Bookshelf";
+import NewBookSearch from "./components/NewBookSearch";
+import Sidebar from "./components/Sidebar";
 
 // App
 function App() {
   return (
     <div>
-      <Header/>
-      <section className={styles.bookshelf}>
-        <Book/>
-        <Book/>
-        <Book/>
-      </section>
-
+      <Header />
+      <main>
+        <div className="newBookSearch">
+          <NewBookSearch />
+        </div>
+        <div className="sidebar">
+          <Sidebar />
+        </div>
+        <div className="bookshelf">
+          <Bookshelf />
+        </div>
+      </main>
     </div>
-  )
+  );
 }
-export default App
+export default App;

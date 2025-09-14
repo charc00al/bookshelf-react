@@ -30,3 +30,26 @@ h1 {
   line-height: 1.1;
 }
 
+main {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 1fr auto;
+}
+
+.newBookSearch {
+  grid-column-start: 1;
+  grid-column-end: span 2;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 2rem;
+}
+
+.sidebar {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.bookshelf {
+  grid-column: 2;
+  grid-row: 2;
+}

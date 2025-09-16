@@ -1,6 +1,5 @@
-      
 function Header() {
-    return <h1>Bookshelf</h1>
+  return <h1 style={{ margin: 0 }}>bookshelf</h1>;
 }
 
-export default Header
+export default Header;

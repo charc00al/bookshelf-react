@@ -1,21 +1,28 @@
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
   font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+  /* colors */
+  color: rgba(255, 255, 255, 0.87);
+
   --green: rgb(68, 81, 51);
   --dark-olive: rgb(56, 63, 47);
   --grey: rgb(129, 133, 122);
   --dark-grey: rgb(46, 44, 44);
-  --whiteish: rgb(213, 213, 213)
+  --whiteish: rgb(213, 213, 213);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: poppinsLight, sans-serif;
 }
 
 body {
@@ -23,12 +30,43 @@ body {
   padding: 4rem;
 }
 
+/* fonts & text */
 
+@font-face {
+  font-family: poppinsLight;
+  src: url(/fonts/poppins/Poppins-Light.ttf);
+  font-weight: light;
+}
+
+@font-face {
+  font-family: poppinsMedium;
+  src: url(/fonts/poppins/Poppins-Medium.ttf);
+  font-weight: medium;
+}
+
+@font-face {
+  font-family: poppinsRegular;
+  src: url(/fonts/poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: poppinsBold;
+  src: url(/fonts/poppins/Poppins-Bold.ttf);
+  font-weight: bold;
+}
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  text-decoration: none;
+  font-family: poppinsMedium;
 }
+
+h4 {
+  font-family: poppinsMedium, sans-serif;
+}
+
+/* HOMEPAGE LAYOUT */
 
 main {
   display: grid;
@@ -52,4 +90,40 @@ main {
 .bookshelf {
   grid-column: 2;
   grid-row: 2;
+}
+
+/* input */
+
+input {
+  border-radius: 30px;
+  border-style: none;
+  outline: none;
+  padding-left: 2rem;
+  background-color: var(--whiteish);
+  color: var(--dark-grey);
+  height: 50px;
+  width: 200px;
+  margin-right: 1rem;
+  font-size: 1rem;
+}
+
+/* button */
+
+button {
+  border-radius: 30px;
+  font-size: 1rem;
+  font-family: inherit;
+  background-color: var(--dark-grey);
+  cursor: pointer;
+  transition: border-color 0.25s;
+
+  color: rgba(255, 255, 255, 0.87);
+
+  border: 1px solid var(--dark-grey);
+  cursor: pointer;
+  height: 50px;
+  width: 130px;
+}
+button:hover {
+  border-color: var(--green);
 }

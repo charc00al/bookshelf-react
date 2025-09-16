@@ -1,0 +1,57 @@
+.sidebar {
+  margin-right: 2rem;
+  height: 650px;
+  width: 250px;
+  background-color: var(--grey);
+  border-radius: 30px;
+}
+
+/* Search */
+
+.bookshelfSearch {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bookshelfSearchInput {
+  margin-top: 2rem;
+  padding-left: 1rem;
+}
+
+.bookshelfSearchButton {
+  position: absolute;
+  top: 49%;
+  right: 2rem;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.4rem;
+  background-color: var(--green);
+  border-color: var(--green);
+}
+.bookshelfSearchButton:hover {
+  border-color: var(--whiteish);
+}
+
+/* Menu options */
+
+.sidebarText {
+  margin-left: 3rem;
+}
+
+.sidebarTextChunk {
+  margin-top: 2.5rem;
+}
+
+.sidebarTextChunk p {
+  margin-block-start: 0;
+  margin-block-end: 0.8rem;
+}
+
+.sidebarTextChunk h4 {
+  margin-bottom: 0.5rem;
+}

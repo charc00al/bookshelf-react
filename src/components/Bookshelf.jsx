@@ -1,14 +1,20 @@
 import Book from "./Book";
-import styles from './Bookshelf.module.css';
+import styles from "./Bookshelf.module.css";
 
 function Bookshelf() {
-return (
+  return (
     <section className={styles.bookshelf}>
-        <Book/>
-        <Book/>
-        <Book/>
+      <Book />
+      <Book />
+      <Book />
+      <Book />
+      <Book />
+      <Book />
+      <Book />
+      <Book />
+      <Book />
     </section>
-)
+  );
 }
 
-export default Bookshelf
+export default Bookshelf;

@@ -1,12 +1,13 @@
 .bookshelf {
   display: grid;
   gap: 1.5rem;
-  background-color: var(--whiteish);
-  padding-top: 1rem; 
+  background-color: var(--dark-grey);
+  padding-top: 1rem;
   padding-bottom: 3rem;
   padding-left: 2.5rem;
   padding-right: 1rem;
   grid-template-columns: repeat(1, 1fr);
+  border-radius: 30px;
 }
 
 @media (min-width: 650px) {

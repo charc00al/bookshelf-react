@@ -1,7 +1,7 @@
-import Header from ".././components/Header";
-import Bookshelf from ".././components/Bookshelf";
-import NewBookSearch from ".././components/NewBookSearch";
-import Sidebar from ".././components/Sidebar";
+import Header from "../components/Homepage/Header";
+import Bookshelf from "../components/Bookshelf/Bookshelf";
+import NewBookSearch from "../components/Homepage/NewBookSearch";
+import Sidebar from "../components/Homepage/Sidebar";
 
 function Home() {
   return (

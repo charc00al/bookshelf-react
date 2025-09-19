@@ -1,0 +1,12 @@
+.bookReason {
+  resize: none;
+  padding-top: 0.9rem;
+  background-color: var(--grey);
+  color: white;
+  margin-bottom: 1rem;
+  width: 20vw;
+}
+
+.bookReason::placeholder {
+  color: var(--whiteish);
+}

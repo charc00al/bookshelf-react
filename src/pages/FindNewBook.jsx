@@ -1,9 +1,16 @@
-import Header from "../components/Header";
-import Bookshelf from "../components/Bookshelf";
-import NewBookSearch from "../components/NewBookSearch";
-import Sidebar from "../components/Sidebar";
+import Header from "../components/Homepage/Header";
+import Bookshelf from "../components/Bookshelf/Bookshelf";
+import NewBookSearch from "../components/Homepage/NewBookSearch";
+import Sidebar from "../components/Homepage/Sidebar";
+import { useNavigate } from "react-router-dom";
 
 function FindNewBook() {
+  const navigate = useNavigate();
+
+  function handleBookClick() {
+    navigate("/add-new-book");
+  }
+
   return (
     <div>
       <Header />
@@ -15,7 +22,7 @@ function FindNewBook() {
           <Sidebar />
         </div>
         <div className="bookshelf">
-          <Bookshelf />
+          <Bookshelf onClick={() => handleBookClick()} />
         </div>
       </main>
     </div>

@@ -1,0 +1,27 @@
+.coverWrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.bookCoverBlur {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 90%; /* take 90% of parent (grid cell) height */
+  aspect-ratio: 150 / 220; /* keep same proportions as cover */
+  object-fit: cover;
+  transform: translate(-50%, -50%); /* center it */
+  filter: blur(20px) brightness(0.8);
+  z-index: 0;
+}
+
+.bookCover {
+  position: relative;
+  width: 150px;
+  height: 220px;
+  border-radius: 10px;
+  z-index: 1;
+}

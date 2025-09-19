@@ -1,0 +1,10 @@
+.input {
+  background-color: var(--grey);
+  color: white;
+  margin-bottom: 1rem;
+  width: 20vw;
+}
+
+.input::placeholder {
+  color: var(--whiteish);
+}

@@ -94,7 +94,8 @@ main {
 
 /* input */
 
-input {
+input,
+textarea {
   border-radius: 30px;
   border-style: none;
   outline: none;

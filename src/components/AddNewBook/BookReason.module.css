@@ -5,6 +5,7 @@
   color: white;
   margin-bottom: 1rem;
   width: 20vw;
+  height: 8rem;
 }
 
 .bookReason::placeholder {

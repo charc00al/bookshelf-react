@@ -21,11 +21,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: white;
   font-family: poppinsLight, sans-serif;
 }
 
 body {
+  color: white;
   background-color: var(--green);
   padding: 4rem;
 }
@@ -60,6 +60,7 @@ h1 {
   line-height: 1.1;
   text-decoration: none;
   font-family: poppinsMedium;
+  color: white;
 }
 
 h4 {

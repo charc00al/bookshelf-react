@@ -1,0 +1,8 @@
+.formControl {
+  margin-bottom: 1rem;
+}
+
+.select {
+  font-family: poppinsLight, sans-serif;
+  text-transform: capitalize;
+}

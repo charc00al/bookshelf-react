@@ -14,6 +14,7 @@ function Home() {
         <div className="sidebar">
           <Sidebar />
         </div>
+
         <div className="bookshelf">
           <Bookshelf />
         </div>

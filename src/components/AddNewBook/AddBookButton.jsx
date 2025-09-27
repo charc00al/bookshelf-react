@@ -1,6 +1,6 @@
 function AddBookButton() {
   return (
-    <button form="addNewBookForm" type="submit">
+    <button className="addBokkButton" form="addNewBookForm" type="submit">
       Add to my library
     </button>
   );

@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "title": "The Silent Library",
+    "author": "Mara J. Winters",
+    "isbn": "978-1-4028-9462-6",
+    "reason": "Heard it has an eerie atmosphere, good for autumn nights."
+  },
+  {
+    "id": 2,
+    "title": "Code of Shadows",
+    "author": "Elliot Grant",
+    "isbn": "978-0-553-21311-9",
+    "reason": "Cyberpunk thriller with hackers — fits my vibe."
+  },
+  {
+    "id": 3,
+    "title": "Gardens of Tomorrow",
+    "author": "Akira Hoshino",
+    "isbn": "978-1-250-31256-4",
+    "reason": "Mix of sci-fi and philosophy, curious about the worldbuilding."
+  },
+  {
+    "id": 4,
+    "title": "Broken Strings",
+    "author": "Sofia Marquez",
+    "isbn": "978-1-5011-7683-2",
+    "reason": "Story about music and healing — might inspire me to play guitar more."
+  },
+  {
+    "id": 5,
+    "title": "The Last Cartographer",
+    "author": "Jonas Falk",
+    "isbn": "978-0-7432-7350-2",
+    "reason": "Adventure novel about lost maps. I just love maps."
+  },
+  {
+    "id": 3,
+    "title": "Gardens of Tomorrow",
+    "author": "Akira Hoshino",
+    "isbn": "978-1-250-31256-4",
+    "reason": "Mix of sci-fi and philosophy, curious about the worldbuilding."
+  },
+  {
+    "id": 4,
+    "title": "Broken Strings",
+    "author": "Sofia Marquez",
+    "isbn": "978-1-5011-7683-2",
+    "reason": "Story about music and healing — might inspire me to play guitar more."
+  },
+  {
+    "id": 5,
+    "title": "The Last Cartographer",
+    "author": "Jonas Falk",
+    "isbn": "978-0-7432-7350-2",
+    "reason": "Adventure novel about lost maps. I just love maps."
+  }
+]

@@ -8,8 +8,9 @@ function Book(props) {
         src="https://wallpapers.com/images/featured/blank-background-cq1lw4r7mte3btvt.jpg"
         alt=""
       />
-      <p className={styles.author}> Ichiro Kishimi</p>
-      <h3 className={styles.title}> The Courage to be disliked</h3>
+      <p className={styles.author}> {props.author}</p>
+      <h3 className={styles.title}> {props.title}</h3>
+      <small className={styles.reason}>{props.reason}</small>
     </div>
   );
 }

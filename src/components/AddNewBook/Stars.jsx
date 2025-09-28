@@ -4,7 +4,6 @@ function Stars(props) {
   return (
     <Rating
       name="size-medium"
-      /* defaultValue={0} */
       defaultValue={props.stars}
       readOnly={props.readOnly}
       sx={{

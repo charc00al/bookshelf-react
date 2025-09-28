@@ -55,6 +55,13 @@ body {
   font-weight: bold;
 }
 
+@font-face {
+  font-family: Poppins;
+  src: url(/fonts/poppins/Poppins-Italic.ttf);
+  font-weight: 400;
+  font-style: italic;
+}
+
 h1 {
   font-size: 3.2em;
   line-height: 1.1;

@@ -16,12 +16,16 @@ function Book(props) {
         src="https://wallpapers.com/images/featured/blank-background-cq1lw4r7mte3btvt.jpg"
         alt=""
       />
-      <p className={styles.author}> {props.author}</p>
-      <h3 className={styles.title}> {props.title}</h3>
-      <small className={styles.reason}>{props.reason}</small>
-      <small className={styles.notes}>{props.notes}</small>
-      {props.view === "list" && <Stars stars={props.stars} readOnly />}
-      {/* add id?, isbn, status, tags */}
+      <section className={styles.textGrid}>
+        <p className={styles.author}> {props.author}</p>
+        <h3 className={styles.title}> {props.title}</h3>
+        <small className={styles.reason}>{props.reason}</small>
+        <small className={styles.notes}>{props.notes}</small>
+        <div className={styles.stars}>
+          {props.view === "list" && <Stars stars={props.stars} readOnly />}
+        </div>
+        {/* add id?, isbn, status, tags */}
+      </section>
     </div>
   );
 }

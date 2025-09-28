@@ -43,6 +43,48 @@
 /* LIST VIEW */
 
 .bookListView {
+  display: flex;
+  gap: 5rem;
+  align-items: stretch;
+  margin-bottom: 3rem;
+}
+
+.bookListView .bookCover {
+  height: 300px;
+  width: 200px;
+  margin: 0;
+}
+
+.textGrid {
   display: grid;
-  grid-template-columns: (3, 1fr);
+  grid-template-rows: min-content min-content auto auto auto;
+}
+
+.bookListView .title {
+  grid-row: 1;
+  font-size: 1.5rem;
+  font-family: poppinsMedium;
+  margin-bottom: 0.5rem;
+}
+
+.bookListView .author {
+  grid-row: 2;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.bookListView .reason {
+  grid-row: 3;
+}
+
+.bookListView .notes {
+  grid-row: 4;
+  color: var(--grey);
+  font-family: Poppins;
+  font-style: italic;
+}
+
+.bookListView .stars {
+  grid-row: 5;
+  align-self: end;
 }

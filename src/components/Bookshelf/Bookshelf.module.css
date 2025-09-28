@@ -1,12 +1,19 @@
 .bookshelfWrapper {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
   background-color: var(--dark-grey);
   border-radius: 30px;
+  width: 75vw;
 }
 
-.bookshelf {
+.toggleWrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* GRID VIEW */
+
+.bookshelfGrid {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: auto auto;
@@ -17,30 +24,36 @@
   padding-right: 1rem;
 }
 
-.toggleWrapper {
-  justify-self: end;
-}
-
 @media (min-width: 650px) {
-  .bookshelf {
+  .bookshelfGrid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (min-width: 1100px) {
-  .bookshelf {
+  .bookshelfGrid {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 
 @media (min-width: 1300px) {
-  .bookshelf {
+  .bookshelfGrid {
     grid-template-columns: repeat(5, 1fr);
   }
 }
 
 @media (min-width: 1550px) {
-  .bookshelf {
+  .bookshelfGrid {
     grid-template-columns: repeat(6, 1fr);
   }
+}
+
+/* LIST VIEW */
+
+.bookshelfList {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 10%;
 }

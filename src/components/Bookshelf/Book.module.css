@@ -1,4 +1,6 @@
-.book {
+/* GRID VIEW (default) */
+
+.bookGridView {
   text-align: left;
   display: flex;
   flex-direction: column;
@@ -36,4 +38,11 @@
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   overflow: hidden;
+}
+
+/* LIST VIEW */
+
+.bookListView {
+  display: grid;
+  grid-template-columns: (3, 1fr);
 }

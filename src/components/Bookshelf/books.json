@@ -1,58 +1,90 @@
 [
   {
     "id": 1,
-    "title": "The Silent Library",
-    "author": "Mara J. Winters",
-    "isbn": "978-1-4028-9462-6",
-    "reason": "Heard it has an eerie atmosphere, good for autumn nights."
+    "author": "Isaac Asimov",
+    "title": "Foundation",
+    "isbn": "9780553293357",
+    "reason": "Classic sci-fi with mind-blowing ideas about the future of humanity.",
+    "notes": "Loved the politics and psychohistory concept.",
+    "status": "finished",
+    "stars": 5,
+    "tags": ["sci-fi", "classic", "space"]
   },
   {
     "id": 2,
-    "title": "Code of Shadows",
-    "author": "Elliot Grant",
-    "isbn": "978-0-553-21311-9",
-    "reason": "Cyberpunk thriller with hackers — fits my vibe."
+    "author": "J.K. Rowling",
+    "title": "Harry Potter and the Philosopher's Stone",
+    "isbn": "9780747532699",
+    "reason": "Fun and magical, a perfect escape.",
+    "notes": "Reread as an adult; still enjoyable.",
+    "status": "reading",
+    "stars": 4,
+    "tags": ["fantasy", "magic", "young adult"]
   },
   {
     "id": 3,
-    "title": "Gardens of Tomorrow",
-    "author": "Akira Hoshino",
-    "isbn": "978-1-250-31256-4",
-    "reason": "Mix of sci-fi and philosophy, curious about the worldbuilding."
+    "author": "George Orwell",
+    "title": "1984",
+    "isbn": "9780451524935",
+    "reason": "Dystopian novel that makes you question society.",
+    "notes": "Pay attention to the newspeak concepts.",
+    "status": "finished",
+    "stars": 5,
+    "tags": ["dystopia", "classic", "politics"]
   },
   {
     "id": 4,
-    "title": "Broken Strings",
-    "author": "Sofia Marquez",
-    "isbn": "978-1-5011-7683-2",
-    "reason": "Story about music and healing — might inspire me to play guitar more."
+    "author": "Frank Herbert",
+    "title": "Dune",
+    "isbn": "9780441013593",
+    "reason": "Epic sci-fi saga with political intrigue and desert planets.",
+    "notes": "Complex but rewarding, especially the world-building.",
+    "status": "want to read",
+    "stars": 0,
+    "tags": ["sci-fi", "epic", "adventure"]
   },
   {
     "id": 5,
-    "title": "The Last Cartographer",
-    "author": "Jonas Falk",
-    "isbn": "978-0-7432-7350-2",
-    "reason": "Adventure novel about lost maps. I just love maps."
+    "author": "Harper Lee",
+    "title": "To Kill a Mockingbird",
+    "isbn": "9780061120084",
+    "reason": "A timeless story about justice and morality.",
+    "notes": "Loved the character development of Scout.",
+    "status": "finished",
+    "stars": 4,
+    "tags": ["classic", "literature", "social"]
   },
   {
-    "id": 3,
-    "title": "Gardens of Tomorrow",
-    "author": "Akira Hoshino",
-    "isbn": "978-1-250-31256-4",
-    "reason": "Mix of sci-fi and philosophy, curious about the worldbuilding."
+    "id": 6,
+    "author": "Suzanne Collins",
+    "title": "The Hunger Games",
+    "isbn": "9780439023528",
+    "reason": "Exciting dystopian world, engaging story.",
+    "notes": "Quick read, very gripping.",
+    "status": "reading",
+    "stars": 3,
+    "tags": ["dystopia", "adventure", "young adult"]
   },
   {
-    "id": 4,
-    "title": "Broken Strings",
-    "author": "Sofia Marquez",
-    "isbn": "978-1-5011-7683-2",
-    "reason": "Story about music and healing — might inspire me to play guitar more."
+    "id": 7,
+    "author": "Neil Gaiman",
+    "title": "American Gods",
+    "isbn": "9780062572233",
+    "reason": "Weird and wonderful story about mythology in modern America.",
+    "notes": "Beautifully written, sometimes confusing but worth it.",
+    "status": "want to read",
+    "stars": 0,
+    "tags": ["fantasy", "mythology", "adult"]
   },
   {
-    "id": 5,
-    "title": "The Last Cartographer",
-    "author": "Jonas Falk",
-    "isbn": "978-0-7432-7350-2",
-    "reason": "Adventure novel about lost maps. I just love maps."
+    "id": 8,
+    "author": "Brandon Sanderson",
+    "title": "Mistborn: The Final Empire",
+    "isbn": "9780765311788",
+    "reason": "Unique magic system and engaging heist story.",
+    "notes": "Loved the twists and character arcs.",
+    "status": "finished",
+    "stars": 5,
+    "tags": ["fantasy", "magic", "epic"]
   }
 ]

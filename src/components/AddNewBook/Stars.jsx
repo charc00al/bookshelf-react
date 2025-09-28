@@ -1,10 +1,12 @@
 import { Rating } from "@mui/material";
 
-function Stars() {
+function Stars(props) {
   return (
     <Rating
       name="size-medium"
-      defaultValue={0}
+      /* defaultValue={0} */
+      defaultValue={props.stars}
+      readOnly={props.readOnly}
       sx={{
         color: "#f5b50a",
         "& .MuiRating-iconEmpty": {

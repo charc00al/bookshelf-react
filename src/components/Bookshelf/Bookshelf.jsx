@@ -15,30 +15,39 @@ function Bookshelf(props) {
 
   return (
     <div className={styles.bookshelfWrapper}>
-      <ViewToggle
-        className={styles.toggleWrapper}
-        onChange={handleViewChange}
-      />
-      <section className={styles.bookshelf}>
-        {view === "grid"
-          ? books.map((book) => (
-              <Book
-                onClick={props.onClick}
-                key={book.id}
-                author={book.author}
-                title={book.title}
-              />
-            ))
-          : books.map((book) => (
-              <Book
-                onClick={props.onClick}
-                key={book.id}
-                author={book.author}
-                title={book.title}
-                reason={book.reason}
-              />
-            ))}
-      </section>
+      <div className={styles.toggleWrapper}>
+        <ViewToggle onChange={handleViewChange} />
+      </div>
+
+      {view === "grid" ? (
+        <section className={styles.bookshelfGrid}>
+          {books.map((book) => (
+            <Book
+              view={view}
+              onClick={props.onClick}
+              key={book.id}
+              author={book.author}
+              title={book.title}
+            />
+          ))}
+        </section>
+      ) : (
+        <section className={styles.bookshelfList}>
+          {books.map((book) => (
+            <Book
+              view={view}
+              onClick={props.onClick}
+              // book db properties
+              key={book.id}
+              author={book.author}
+              title={book.title}
+              reason={book.reason}
+              notes={book.notes}
+              stars={book.stars}
+            />
+          ))}
+        </section>
+      )}
     </div>
   );
 }

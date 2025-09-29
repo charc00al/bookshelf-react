@@ -44,6 +44,8 @@ function Bookshelf(props) {
               reason={book.reason}
               notes={book.notes}
               stars={book.stars}
+              status={book.status}
+              tags={book.tags}
             />
           ))}
         </section>

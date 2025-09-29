@@ -4,11 +4,12 @@
     "author": "Isaac Asimov",
     "title": "Foundation",
     "isbn": "9780553293357",
-    "reason": "Classic sci-fi with mind-blowing ideas about the future of humanity. I’ve always been curious about Asimov’s vision of psychohistory and how he blends mathematics with human behavior. This feels like one of those books that shape the genre itself.",
-    "notes": "I was really drawn to the political maneuvering and the way entire civilizations rise and fall. The psychohistory concept is fascinating, almost unsettling in how it mirrors real-world history. Some parts felt dry, but then you hit a big reveal and it pulls you right back in.",
+    "reason": "Classic sci-fi with mind-blowing ideas about the future of humanity. I’ve always been curious about Asimov’s vision of psychohistory and how he blends mathematics with human behavior. This feels like one of those books that shape the genre itself. ",
+    "notes": "I was really drawn to the political maneuvering and the way entire civilizations rise and fall. The psychohistory concept is fascinating, almost unsettling in how it mirrors real-world history. Some parts felt dry, but then you hit a big reveal and it pulls you right back in. I was really drawn to the political maneuvering and the way entire civilizations rise and fall. The psychohistory concept is fascinating, almost unsettling in how it mirrors real-world history. Some parts felt dry, but then you hit a big reveal and it pulls you right back in. ",
     "status": "finished",
     "stars": 5,
-    "tags": ["sci-fi", "classic", "space"]
+    "tags": ["sci-fi", "classic", "space"],
+    "chip": "sci-fi"
   },
   {
     "id": 2,
@@ -16,7 +17,7 @@
     "title": "Harry Potter and the Philosopher's Stone",
     "isbn": "9780747532699",
     "reason": "Fun and magical, a perfect escape. I grew up with this series, but I want to reread it as an adult and see how it holds up.",
-    "notes": "Reading it again feels nostalgic but also refreshing. Some parts are clearly aimed at kids, but the charm is still there. I notice little world-building details now that I never paid attention to as a child.",
+    "notes": "Reading it again feels nostalgic but also refreshing. Some parts are clearly aimed at kids, but the charm is still there. I notice little world-building details now that I never paid attention to as a child. Reading it again feels nostalgic but also refreshing. Some parts are clearly aimed at kids, but the charm is still there. I notice little world-building details now that I never paid attention to as a child. Reading it again feels nostalgic but also refreshing. Some parts are clearly aimed at kids, but the charm is still there. I notice little world-building details now that I never paid attention to as a child. Reading it again feels nostalgic but also refreshing. Some parts are clearly aimed at kids, but the charm is still there. I notice little world-building details now that I never paid attention to as a child.",
     "status": "reading",
     "stars": 4,
     "tags": ["fantasy", "magic", "young adult"]

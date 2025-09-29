@@ -1,7 +1,8 @@
 import styles from "./Book.module.css";
 import classnames from "classnames";
 import Stars from "../AddNewBook/Stars";
-import { useState } from "react";
+import MyChip from "../MUIcomponents/Chip";
+import Stack from "@mui/material/Stack";
 
 function Book(props) {
   const viewClass = classnames({
@@ -21,10 +22,21 @@ function Book(props) {
         <h3 className={styles.title}> {props.title}</h3>
         <small className={styles.reason}>{props.reason}</small>
         <small className={styles.notes}>{props.notes}</small>
-        <div className={styles.stars}>
-          {props.view === "list" && <Stars stars={props.stars} readOnly />}
-        </div>
-        {/* add id?, isbn, status, tags */}
+
+        {props.view === "list" && (
+          <div className={styles.starsAndChips}>
+            <div className={styles.chips}>
+              <MyChip label={props.status} type="status" />
+              <Stack direction={"row"} spacing={1}>
+                {props.tags.map((tag, index) => (
+                  <MyChip key={index} label={tag} type="tag" />
+                ))}
+              </Stack>
+            </div>
+
+            <Stars stars={props.stars} readOnly />
+          </div>
+        )}
       </section>
     </div>
   );

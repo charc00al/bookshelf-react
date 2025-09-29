@@ -45,8 +45,8 @@
 .bookListView {
   display: flex;
   gap: 5rem;
-  align-items: stretch;
-  margin-bottom: 3rem;
+  /* align-items: stretch; */
+  margin-bottom: 6rem;
 }
 
 .bookListView .bookCover {
@@ -57,34 +57,59 @@
 
 .textGrid {
   display: grid;
-  grid-template-rows: min-content min-content auto auto auto;
+  grid-template-rows: repeat(5, min-content);
+  gap: 1rem;
 }
 
 .bookListView .title {
   grid-row: 1;
   font-size: 1.5rem;
   font-family: poppinsMedium;
-  margin-bottom: 0.5rem;
 }
 
 .bookListView .author {
   grid-row: 2;
   font-size: 1.2rem;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
 }
 
 .bookListView .reason {
-  grid-row: 3;
+  grid-row: 4;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  /* text-overflow: ellipsis;  */
+  word-break: break-word; /* avoids words overflowing */
+  line-height: 1.4;
+  max-height: calc(1.4em * 3);
 }
 
 .bookListView .notes {
-  grid-row: 4;
+  grid-row: 5;
   color: var(--grey);
   font-family: Poppins;
   font-style: italic;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  /* text-overflow: ellipsis;  */
+  word-break: break-word; /* avoids words overflowing */
+  line-height: 1.4;
+  max-height: calc(1.4em * 4); /* !! to cut text after clamp */
 }
 
-.bookListView .stars {
-  grid-row: 5;
+.bookListView .starsAndChips {
+  grid-row: 3;
   align-self: end;
+  display: flex;
+  justify-content: space-between;
+  margin: 0.2rem 0;
+}
+
+.bookListView .chips {
+  display: flex;
+  gap: 2rem;
 }

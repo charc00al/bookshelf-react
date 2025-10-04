@@ -31,7 +31,7 @@ function MyChip(props) {
       sx={{
         backgroundColor: chipColor,
         color: textColor,
-        borderColor: "var(--whiteish)",
+        borderColor: borderColor,
       }}
     />
   );

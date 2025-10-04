@@ -1,0 +1,26 @@
+.bookDetailWrapper {
+  display: grid;
+  justify-items: center;
+  width: 60vw;
+  margin: 0 auto;
+  margin-top: 3rem;
+  gap: 1rem;
+}
+
+.book {
+  width: 100%;
+}
+
+.notes {
+  justify-self: stretch;
+}
+
+.btnChange {
+  justify-self: end;
+  display: flex;
+  gap: 1rem;
+}
+
+.btnAddNotes {
+  justify-self: end;
+}

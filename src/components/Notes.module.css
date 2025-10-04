@@ -1,0 +1,8 @@
+.notesTextarea {
+  resize: none;
+  padding: 2rem;
+  background-color: var(--dark-grey);
+  color: white;
+  height: 18rem;
+  width: 100%;
+}

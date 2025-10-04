@@ -2,8 +2,15 @@ import Header from "../components/Homepage/Header";
 import Bookshelf from "../components/Bookshelf/Bookshelf";
 import NewBookSearch from "../components/Homepage/NewBookSearch";
 import Sidebar from "../components/Homepage/Sidebar";
+import { useNavigate } from "react-router-dom";
 
 function Home() {
+  const navigate = useNavigate();
+
+  function handleBookClick() {
+    navigate("/book-detail");
+  }
+
   return (
     <div>
       <Header />
@@ -16,7 +23,7 @@ function Home() {
         </div>
 
         <div className="bookshelf">
-          <Bookshelf />
+          <Bookshelf onClick={() => handleBookClick()} />
         </div>
       </main>
     </div>

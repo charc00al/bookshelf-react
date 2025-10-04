@@ -8,6 +8,7 @@ function Book(props) {
   const viewClass = classnames({
     [styles.bookGridView]: props.view === "grid",
     [styles.bookListView]: props.view === "list",
+    [styles.bookDetailView]: props.view === "detail",
   });
 
   return (
@@ -23,7 +24,7 @@ function Book(props) {
         <small className={styles.reason}>{props.reason}</small>
         <small className={styles.notes}>{props.notes}</small>
 
-        {props.view === "list" && (
+        {(props.view === "list" || props.view === "detail") && (
           <div className={styles.starsAndChips}>
             <div className={styles.chips}>
               <MyChip label={props.status} type="status" />
@@ -33,7 +34,6 @@ function Book(props) {
                 ))}
               </Stack>
             </div>
-
             <Stars stars={props.stars} readOnly />
           </div>
         )}

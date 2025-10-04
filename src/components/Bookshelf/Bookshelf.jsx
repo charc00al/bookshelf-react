@@ -24,7 +24,7 @@ function Bookshelf(props) {
           {books.map((book) => (
             <Book
               view={view}
-              onClick={props.onClick}
+              onClick={() => props.onClick(book.id)} // pass id
               key={book.id}
               author={book.author}
               title={book.title}
@@ -36,7 +36,7 @@ function Bookshelf(props) {
           {books.map((book) => (
             <Book
               view={view}
-              onClick={props.onClick}
+              onClick={() => props.onClick(book.id)} // pass id
               // book db properties
               key={book.id}
               author={book.author}

@@ -13,7 +13,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/find-new-book" element={<FindNewBook />} />
         <Route path="/add-new-book" element={<AddNewBook />} />
-        <Route path="/book-detail" element={<BookDetail />} />
+        <Route path="/book-detail/:id" element={<BookDetail />} />
       </Routes>
     </BrowserRouter>
   );

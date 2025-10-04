@@ -2,13 +2,14 @@ import Header from "../components/Homepage/Header";
 import Bookshelf from "../components/Bookshelf/Bookshelf";
 import NewBookSearch from "../components/Homepage/NewBookSearch";
 import Sidebar from "../components/Homepage/Sidebar";
+
 import { useNavigate } from "react-router-dom";
 
 function Home() {
   const navigate = useNavigate();
 
-  function handleBookClick() {
-    navigate("/book-detail");
+  function handleBookClick(id) {
+    navigate(`/book-detail/${id}`); // template literal
   }
 
   return (
@@ -23,7 +24,7 @@ function Home() {
         </div>
 
         <div className="bookshelf">
-          <Bookshelf onClick={() => handleBookClick()} />
+          <Bookshelf onClick={handleBookClick} />
         </div>
       </main>
     </div>

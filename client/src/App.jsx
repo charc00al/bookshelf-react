@@ -9,22 +9,19 @@ import axios from "axios";
 // App
 function App() {
 
-  const [array, setArray] = useState([]);
-
-  const fetchAPI = async () => {
-    const response = await axios.get("http://localhost:3000/");
-    setArray(response.data.fruits);
-    console.log(response.data.fruits);
-  }
+  const [books, setBooks] = useState([]);
 
   useEffect(() => {
-    fetchAPI();
+    axios.get("/api/books")
+      .then((res) => {
+        setBooks(res.data);
+    });
   }, []);
 
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home books={books}/>} />
         <Route path="/find-new-book" element={<FindNewBook />} />
         <Route path="/add-new-book" element={<AddNewBook />} />
         <Route path="/book-detail/:id" element={<BookDetail />} />

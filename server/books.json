@@ -1,0 +1,91 @@
+[
+  {
+    "id": 1,
+    "author": "Terry Pratchett",
+    "title": "Good Omens",
+    "isbn": "9780060853983",
+    "reason": "Apocalypse comedy with an angel and a demon being besties? Yes please. I need a laugh and some existential crisis at the same time.",
+    "notes": "Utter chaos in the best way possible. The writing is so British it hurts (in a good way). Might be illegal to read this in silence.",
+    "status": "finished",
+    "stars": 4,
+    "tags": ["fantasy", "comedy", "apocalypse"],
+    "chip": "fantasy"
+  },
+  {
+    "id": 2,
+    "author": "Yuval Noah Harari",
+    "title": "Sapiens: A Brief History of Humankind",
+    "isbn": "9780062316097",
+    "reason": "Everyone keeps quoting this book like it’s the Bible of modern history. I wanna see if I'm actually just a glorified monkey.",
+    "notes": "Some chapters made me question my entire existence. Others made me feel like I accidentally joined a TED Talk halfway through.",
+    "status": "reading",
+    "stars": 4,
+    "tags": ["history", "science", "non-fiction"]
+  },
+  {
+    "id": 3,
+    "author": "Madeline Miller",
+    "title": "The Song of Achilles",
+    "isbn": "9780062060624",
+    "reason": "Gay Greek tragedy? Inject it straight into my veins. Everyone says this book emotionally destroys you in a beautiful way.",
+    "notes": "I'm not saying I cried, but I did have to stare at a wall for 20 minutes afterward. 10/10 would suffer again.",
+    "status": "finished",
+    "stars": 5,
+    "tags": ["mythology", "romance", "tragedy"]
+  },
+  {
+    "id": 4,
+    "author": "Andy Weir",
+    "title": "Project Hail Mary",
+    "isbn": "9780593135204",
+    "reason": "I want a sci-fi book that feels smart but also silly. Apparently this one has science, jokes, AND potentially space friendship.",
+    "notes": "",
+    "status": "want to read",
+    "stars": 0,
+    "tags": ["sci-fi", "space", "adventure"]
+  },
+  {
+    "id": 5,
+    "author": "Michelle Zauner",
+    "title": "Crying in H Mart",
+    "isbn": "9780525657743",
+    "reason": "Asian mother-daughter memoir + food = guaranteed emotional damage. Gonna cry and then order Korean food.",
+    "notes": "Reading this while hungry was a mistake. Reading this while emotionally stable was also a mistake.",
+    "status": "finished",
+    "stars": 4,
+    "tags": ["memoir", "food", "grief"]
+  },
+  {
+    "id": 6,
+    "author": "Erin Morgenstern",
+    "title": "The Night Circus",
+    "isbn": "9780385534635",
+    "reason": "Magical circus that only opens at night? Sounds like vibes. I want atmosphere, not logic.",
+    "notes": "The plot? Unsure. The vibe? Immaculate. I felt like I was floating in a dream made of black velvet and cinnamon.",
+    "status": "reading",
+    "stars": 3,
+    "tags": ["fantasy", "romance", "aesthetic"]
+  },
+  {
+    "id": 7,
+    "author": "Douglas Adams",
+    "title": "The Hitchhiker's Guide to the Galaxy",
+    "isbn": "9780345391803",
+    "reason": "I want to understand why 42 is funny. Also, I've been told this book unlocks a secret level of sarcasm.",
+    "notes": "Half of it felt like nonsense, but like, the *good* kind of nonsense. Might adopt ‘Don’t Panic’ as my new life motto.",
+    "status": "want to read",
+    "stars": 0,
+    "tags": ["sci-fi", "comedy", "classic"]
+  },
+  {
+    "id": 8,
+    "author": "Donna Tartt",
+    "title": "The Secret History",
+    "isbn": "9781400031702",
+    "reason": "Dark academia murder book. I want to feel like a pretentious university student with a smoking addiction.",
+    "notes": "These people need therapy and maybe prison. Couldn’t stop reading.",
+    "status": "finished",
+    "stars": 5,
+    "tags": ["dark academia", "thriller", "literary"]
+  }
+]

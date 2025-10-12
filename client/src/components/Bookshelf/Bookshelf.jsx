@@ -3,9 +3,9 @@ import ViewToggle from "./ViewToggle";
 import styles from "./Bookshelf.module.css";
 import { useState } from "react";
 
-import books from "./books.json";
+//import books from "./books.json";
 
-function Bookshelf(props) {
+function Bookshelf({books}) {
   const [view, setView] = useState("grid");
 
   const handleViewChange = (newView) => {

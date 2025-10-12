@@ -1,17 +1,27 @@
 import Book from "./Book";
 import ViewToggle from "./ViewToggle";
 import styles from "./Bookshelf.module.css";
-import { useState } from "react";
+import {useState, useEffect} from "react";
+import axios from "axios";
 
 //import books from "./books.json";
 
-function Bookshelf({books}) {
+function Bookshelf(props) {
   const [view, setView] = useState("grid");
 
   const handleViewChange = (newView) => {
     setView(newView);
     console.log(books);
   };
+
+  const [books, setBooks] = useState([]);
+
+  useEffect(() => {
+    axios.get("/api/books")
+      .then((res) => {
+        setBooks(res.data);
+    });
+  }, []);
 
   return (
     <div className={styles.bookshelfWrapper}>

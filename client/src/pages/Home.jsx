@@ -5,14 +5,12 @@ import Sidebar from "../components/Homepage/Sidebar";
 
 import { useNavigate } from "react-router-dom";
 
-function Home({books}) {
+function Home() {
   const navigate = useNavigate();
 
   function handleBookClick(id) {
     navigate(`/book-detail/${id}`); // template literal
   }
-
-  // console.log(props.books);
 
   return (
     <div>
@@ -24,9 +22,8 @@ function Home({books}) {
         <div className="sidebar">
           <Sidebar />
         </div>
-
         <div className="bookshelf">
-          <Bookshelf onClick={handleBookClick} books={books}/>
+          <Bookshelf onClick={handleBookClick}/>
         </div>
       </main>
     </div>

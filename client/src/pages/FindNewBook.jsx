@@ -4,7 +4,7 @@ import NewBookSearch from "../components/Homepage/NewBookSearch";
 import Sidebar from "../components/Homepage/Sidebar";
 import { useNavigate } from "react-router-dom";
 
-function FindNewBook() {
+function FindNewBook({books}) {
   const navigate = useNavigate();
 
   function handleBookClick() {
@@ -22,7 +22,7 @@ function FindNewBook() {
           <Sidebar />
         </div>
         <div className="bookshelf">
-          <Bookshelf onClick={() => handleBookClick()} />
+          <Bookshelf onClick={() => handleBookClick()} books={books}/>
         </div>
       </main>
     </div>

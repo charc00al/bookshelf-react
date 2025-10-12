@@ -2,13 +2,21 @@ import Header from "../components/Homepage/Header";
 import Book from "../components/Bookshelf/Book";
 import Notes from "../components/Notes";
 import styles from "./BookDetail.module.css";
-import books from "../components/Bookshelf/books.json";
 import { useParams } from "react-router-dom";
+import axios from "axios";
+import { useState, useEffect } from "react";
 
 function BookDetail() {
   const { id } = useParams();
+  const [book, setBook] = useState(null);
 
-  const book = books.find((b) => b.id == id);
+  useEffect(() => {
+    axios.get(`/api/books/${id}`).then(res => {
+      setBook(res.data);
+    });
+  }, [id]);
+
+  if (!book) return <p>Loading...</p>;
 
   return (
     <>

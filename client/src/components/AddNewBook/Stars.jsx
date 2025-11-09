@@ -4,6 +4,10 @@ function Stars(props) {
   return (
     <Rating
       name="size-medium"
+      value={props.propValue}
+      onChange={(event) => 
+        props.onChange(event.target.value)
+      }
       defaultValue={props.stars}
       readOnly={props.readOnly}
       sx={{

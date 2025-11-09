@@ -1,16 +1,16 @@
 import styles from "./BookCover.module.css";
 
-function BookCover() {
+function BookCover(props) {
   return (
     <div className={styles.coverWrapper}>
       <img
         className={styles.bookCover}
-        src="https://wallpapers.com/images/featured/blank-background-cq1lw4r7mte3btvt.jpg"
+        src={props.coverImg}
         alt=""
       />
       <img
         className={styles.bookCoverBlur}
-        src="https://wallpapers.com/images/featured/blank-background-cq1lw4r7mte3btvt.jpg"
+        src={props.coverImg}
         alt=""
       />
     </div>

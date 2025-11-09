@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { TextField, Autocomplete, Chip } from "@mui/material";
 
-function Tags() {
+function Tags(props) {
   const [value, setValue] = useState([]);
   const [options, setOptions] = useState(["fantasy", "sci-Fi", "romance"]);
 
@@ -18,6 +18,7 @@ function Tags() {
             setOptions((prev) => [...prev, tag]);
           }
         });
+        props.onChange(newValue)
       }}
       disableClearable
       renderTags={(value, getTagProps) =>

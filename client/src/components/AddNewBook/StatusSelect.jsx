@@ -1,12 +1,13 @@
 import { useState } from "react";
 import { Select, MenuItem, FormControl } from "@mui/material";
-import styles from "./StatusSelect.module.css"; // we’ll add custom styles here
+import styles from "./StatusSelect.module.css"; 
 
-function StatusSelect() {
+function StatusSelect(props) {
   const [status, setStatus] = useState(""); // state for the select
 
   const handleChange = (event) => {
-    setStatus(event.target.value);
+    setStatus(event.target.value)
+    props.onChange(event.target.value)  
   };
 
   return (
@@ -21,7 +22,7 @@ function StatusSelect() {
           backgroundColor: "var(--whiteish)",
           color: "var(--green)",
           height: "2rem",
-          width: "8rem",
+          width: "10rem",
           "& .MuiSelect-icon": { color: "var(--green)" },
 
           // remove border (normal, hover, focus)

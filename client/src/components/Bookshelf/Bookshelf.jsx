@@ -17,9 +17,8 @@ function Bookshelf(props) {
   const [books, setBooks] = useState([]);
 
   useEffect(() => {
-    axios.get("/api/books")
-      .then((res) => {
-        setBooks(res.data);
+    axios.get("/api/books").then((res) => {
+      setBooks(res.data);
     });
   }, []);
 

@@ -36,13 +36,20 @@ app.get("/api/books/:id", async (req, res) => {
 
     } catch (error) {
         console.error(err);
-        res.status(500).json({error: "Database error"});
+        res.status(500).json({error: "Database loading error"});
     }
 })
 
 app.post("/api/books", async (req, res) => {
-    console.log(req.body)
-    res.send("ok")
+    const b = req.body
+    console.log(b)
+    try {
+        const result = await pool.query("INSERT INTO books (title, author, isbn, reason, status, stars, tags, cover_url) VALUES ($1, $2, $3, $4, $5, $6, $7, $8)", [b.title, b.author, b.isbn, b.reason, b.status, b.stars, b.tags, b.bookCover])
+        res.send("ok")
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({error: "Database upload error"})
+    }
 })
 
 app.listen(port, () => {
